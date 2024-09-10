@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bến xe An Toàn</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="bus3.jpg" rel="shortcut icon" />
+    <link 
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!--  THANH MENU  -->
+    <section class="nav flex container" >
+      <ul class="logo"><li><img src="logo-xe-bus.jpg" alt="Bus" /></li></ul>
+      <ul class="menu flex">
+        <li>
+          <a href="/"><i class="fa-solid fa-house"></i> Trang chủ </a>
+        </li>
+        <li>
+          <a href="/benxe.html"><i class="fa-solid fa-ticket"></i> Bến xe </a>
+        </li>
+        <li>
+          <a href="/nhaxe.html"><i class="fa-solid fa-newspaper"></i></i> Nhà xe </a>
+        </li>
+        <li class="tooltip">
+          <a href="/vechungtoi.html"><i class="fa-solid fa-phone"></i> Về chúng tôi </a>
+          <div class="tooltipcontent">
+            <ul>
+              <li><a href="#">Hotline: 0987.654.321</a> </li>
+              <li><a href="">AnToan@gmail.com</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="tooltip">
+          <a href="#"><i class="fa-solid fa-user"></i></i> Tài Khoản </a>
+          <div class="tooltipcontent">
+            <ul>
+              <li><a href="dangnhap.html"> Đăng nhập</a> </li>
+              <li><a href="dangky.html">Đăng ký</a></li>
+            </ul>
+          </div>
+        </li>
+    </section>
+    
+    <div class="picture">
+        
+        <div class="heaven"><span>Cam kết hoàn tiền 200% nếu nhà xe không cung cấp dịch vụ vận chuyển</span></div>
+            <div class="containers">
+              <h1>Tìm kiếm tuyến đường</h1>
+              <label for="fromSelect">Điểm đi:</label>
+              <select id="fromSelect">
+                  <option value="">Chọn điểm đi</option>
+                  <option value="Sài Gòn">Sài Gòn</option>
+                  <option value="Đà Nẵng">Đà Nẵng</option>
+                  <option value="Hà Nội">Hà Nội</option>
+              </select>
+      
+              <label for="toSelect" style="">Điểm đến:</label>
+              <select id="toSelect">
+                  <option value="">Chọn điểm đến</option>
+                  <option value="Hà Nội">Hà Nội</option>
+                  <option value="Nha Trang">Nha Trang</option>
+                  <option value="Sapa">Sapa</option>
+                  <option value="Vũng Tàu">Vũng Tàu</option>
+                  <option value="Lào Cai">Lào Cai</option>
+                  <option value="Nghệ An">Nghệ An</option>
+              </select>
+      
+              <div><button id="searchButton">Tìm kiếm</button></div>
+              
+              <ul id="routeList">
+                  <li class="kq"><a href="datve.html"><img src="choxe1.jpg" alt="" style="width: 20%;"><br> Xe đi từ Sài Gòn đến Hà Nội: 750.000đ</a></li>
+                  <li class="kq"><a href="datve.html"><img src="anhxe2.jpg" alt="" style="width: 20%;"><br> Xe đi từ Sài Gòn đến Nha Trang: 450.000đ</a></li>
+                  <li class="kq"><a href="datve.html"><img src="choxe3.jpg" alt="" style="width: 20%;"><br> Xe đi từ Đà Nẵng đến Hà Nội: 200.000đ</a></li>
+                  <li class="kq"><a href="datve.html"><img src="choxe4.jpg" alt="" style="width: 20%;"><br> Xe đi từ Hà Nội đến Sapa: 450.000đ</a></li>
+                  <li class="kq"><a href="datve.html"><img src="choxe5.jpg" alt="" style="width: 20%;"><br> Xe đi từ Sài Gòn đến Vũng Tàu: 1800.000đ</a></li>
+                  <li class="kq"><a href="datve.html"><img src="choxe6.jpg" alt="" style="width: 20%;"><br> Xe đi từ Hà Nội đến Lào Cai: 370.000đ</a></li>
+                  <li class="kq"><a href="datve.html"><img src="choxe7.jpg" alt="" style="width: 20%;"><br> Xe đi từ Sài Gòn đến Nghệ An: 890.000đ</a></li>
+              </ul>
+      
+              <div id="noResult">Không có tuyến đường phù hợp.</div>
+            </div>
+  
+            <script src="web.js"></script>
+      <div class="bottom">
+        <ul class="flex">
+          <li><i class="fa-solid fa-calendar-check"></i>Chắc chắn có chỗ</li>
+          <li><i class="fa-solid fa-headphones-simple"></i>Hỗ trợ 24/7</li>
+          <li><i class="fa-solid fa-tag"></i>Nhiều ưu đãi</li>
+          <li><i class="fa-solid fa-coins"></i>Thanh toán đa dạng</li>
+        </ul>
+      </div> 
+    </div>
+
+    <!-- THANH CUỘN LIÊN HỆ -->
+    <section class="ads">
+        <div class="ads1"><i class="fa-solid fa-phone-volume"></i>Gọi ngay 0987.654.321</div>
+        <div class="ads2"><i class="fa-brands fa-facebook"></i>Facebook Fanpage</div>
+        <div class="ads3"><i class="fa-brands fa-facebook-messenger"></i>Facebook chat</div>
+        <div class="ads4"><i class="fa-brands fa-square-instagram"></i>Instagram</div>
+    </section>
+
+    <!-- TUYẾN ĐƯỜNG PHỔ BIẾN -->
+    <div class="container">
+      <h1>Tuyến đường phổ biến</h1>
+      <div class="products flex">
+        <div class="product">
+          <a href="#" target="_blank">
+            <img src="sgnt.png" alt="Anh xe khach Sai Gon - Nha Trang">
+            <h3> Sài Gòn - Nha Trang </h3>
+            <p>Từ 290.000đ</p>
+          </a>
+        </div>
+        <div class="product">
+          <a href="#" target="_blank">
+            <img src="hnhp.png" alt="Anh xe khach Ha Noi - Hai Phong">
+            <h3> Hà Nội - Hải Phòng  </h3>
+            <p>Từ 190.000đ</p>
+          </a>
+        </div>
+        <div class="product">
+          <a href="#" target="_blank">
+            <img src="sgdl.png" alt="Anh xe khach Sai Gon - Da Lat">        
+            <h3> Sài Gòn - Đà Lạt </h3>
+            <p>Từ 390.000đ</p>
+          </a>
+        </div>
+        <div class="product">
+          <a href="#" target="_blank">
+            <img src="sgpt.png" alt="Anh xe khach Sai Gôn - Phan Thiet">
+            <h3> Sài gòn - Phan Thiết </h3>
+            <p>Từ 290.000đ</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- NGHĨ LỄ -->  
+    <div class="container">
+      <h1>Lễ 2/9</h1>
+      <div class="items flex">
+        <div class="item">
+          <a href="#" target="_blank">
+            <img src="1.jpg" alt="Anh thong bao 2/9">
+            <h3> Các nhà xe đã mở bán vé lễ 2/9 </h3>
+            <p>[Mới nhất]</p>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#" target="_blank">
+            <img src="2.png" alt="Anh thong bao 2/9">
+            <h3> Lịch nghỉ lễ 2/9/2024 </h3>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#" target="_blank">
+            <img src="3.png" alt="Anh thong bao 2/9">
+            <h3> Nghỉ lễ 2/9 nên đi đâu chơi </h3>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ƯU ĐÃI -->    
+    <div class="container">
+      <h1>Ưu đãi nổi bật</h1>
+      <div class="items flex">
+        <div class="item">
+         <a href="#" target="_blank">
+            <img src="ud50.jpg" alt="Anh uu dai 50%">
+            <h3> Giảm 50% tối đa 100k khi đặt xe Hải Phòng Travel tại bến xe An Toàn </h3>
+         </a>
+        </div>
+        <div class="item">
+          <a href="#" target="_blank">
+            <img src="ud20.jpg" alt="Anh uu dai 20%">
+            <h3> Giảm đến 20% dành cho khách lần đầu đặt dịch vụ của bến xe An Toàn  </h3>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#" target="_blank">
+            <img src="sv.png" alt="Anh uu dai danh cho sinh vien">
+            <h3> Nhận ưu đãi x5 khi là học sinh của trường Đại học Mở Thành phố Hồ Chí Minh </h3>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#" target="_blank">
+            <img src="gv.png" alt="Anh uu dai danh cho giang vien">
+            <h3> Nhận ưu đãi x10 khi là giảng viên của trường Đại học Mở Thành phố Hồ Chí Minh </h3>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ĐỊA ĐIỂM NỔI BẬT -->
+    <div class="container">
+      <h1>Địa điểm du lịch nổi bật</h1>
+      <div class="items flex">
+        <div class="item">
+          <a href="https://vi.wikipedia.org/wiki/Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh" target="_blank">
+            <img src="sg.jpg" alt="Anh Sai Gon">
+            <h3> Sài Gòn </h3>
+          </a>
+        </div>
+        <div class="item">
+          <a href="https://vi.wikipedia.org/wiki/H%C3%A0_N%E1%BB%99i" target="_blank">
+            <img src="hn.jpg" alt="Anh Ha Noi">
+            <h3> Hà Nội </h3>
+          </a>
+        </div>
+        <div class="item">
+          <a href="https://vi.wikipedia.org/wiki/%C4%90%C3%A0_N%E1%BA%B5ng" target="_blank">
+            <img src="dn.jpg" alt="Anh Da Nang">
+            <h3> Đà Nẵng </h3>
+          </a>
+        </div>
+        <div class="item">
+          <a href="https://vi.wikipedia.org/wiki/Nha_Trang" target="_blank">
+            <img src="nt.jpg" alt="Anh Nha Trang">
+            <h3> Nha Trang </h3>
+          </a>
+        </div>
+        <!--
+          <div class="item">
+            <a href="#">
+              <img src="sp.jpg" alt="Anh SaPa">
+              <h3> SaPa </h3>
+            </a>
+          </div>
+        -->
+      </div>
+    </div>
+
+    <!-- KHÁCH HÀNG ĐÁNH GIÁ -->
+    <h1 class="container">Khách hàng nói gì về bến xe An Toàn </h1>    
+    <div class="comments container flex">   
+      <div class="comment flex">
+        <div class="information">
+          <img src="ceo.jpg" alt="Nguyen Tuan Quynh">
+          <h3>Nguyễn Tuấn Quỳnh</h3>
+          <h4>CEO Saigon Books</h4>
+        </div>
+        <div class="speech"><p>Lần trước tôi có việc gấp phải đi công tác, lên mạng tìm đặt vé xe thì tình cờ tìm thấy bến xe An Toàn. Sau khi tham khảo, tôi quyết định đặt vé và thanh toán. Công nhận rất tiện và nhanh chóng. Chỉ một lúc sau, nhà xe liên hệ xác nhận vé ngay và thông báo thời gian xe dự kiến đón để tôi chuẩn bị. Tôi khá bất ngờ vì nhà xe có thông tin của mình nhanh đến vậy. Chuyến đi hôm đó rất tuyệt. Tôi nhất định sẽ tiếp tục ủng hộ.</p></div>
+      </div>
+      <div class="comment flex">
+        <div class="information">
+          <img src="shark.jpg" alt="Phi">
+          <h3>Trương Lý Hoàng Phi</h3>
+          <h4>Giám đốc BSSC</h4>
+        </div>
+        <div class="speech"><p>Các đối tác của bến xe An Toàn đều là những hãng xe lớn, có uy tín nên tôi hoàn toàn yên tâm khi lựa chọn đặt vé cho bản thân và gia đình. Nhờ hiển thị rõ nhà xe và vị trí chỗ trống trên xe, tôi rất dễ dàng tìm chuyến mình muốn và chỗ mình muốn ngồi. Còn hình thức thanh toán có cả thẻ, ví, tại nhà xe và tốc độ thanh toán thì siêu nhanh, tiết kiệm cho tôi rất nhiều thời gian.</p></div>
+      </div>
+    </div>
+
+    <!--NỀN TẢNG KẾT NỐI NGƯỜI DÙNG VÀ XE-->
+    <div class="container">
+      <h1>Nền tảng kết nối người dùng và nhà xe</h1>
+      <div class="items flex">
+        <div class="item flex">
+          <div class="icon">
+            <i class="fa-solid fa-bus"></i>
+          </div>
+          <div class="information_icon">
+            <h3>2000+ nhà xe chất lượng cao</h3>
+            <p>5000+ tuyến đường trên toàn quốc, chủ động và đa dạng lựa chọn.</p>
+          </div>
+        </div>
+        <div class="item flex">
+          <div class="icon">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="information_icon">
+            <h3>Đặt vé dễ dàng</h3>
+            <p>Đặt vé chỉ với 60s. Chọn xe yêu thích cực nhanh và thuận tiện.</p>
+          </div>
+        </div>
+        <div class="item flex">
+          <div class="icon">
+            <i class="fa-regular fa-square-check"></i>
+          </div>
+          <div class="information_icon">
+            <h3>Chắc chắn có chỗ</h3>
+            <p>Hoàn ngay 150% nếu nhà xe không cung cấp dịch vụ vận chuyển, mang đến hành trình trọn vẹn.</p>
+          </div>
+        </div>
+        <div class="item flex">
+          <div class="icon">
+            <i class="fa-solid fa-ticket"></i>
+          </div>
+          <div class="information_icon">
+            <h3>Nhiều ưu đãi</h3>
+            <p>Hàng ngàn ưu đãi cực chất độc quyền.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DUOC NHAC DEN -->
+    <div class="container">
+      <h1> Nhà xe An Toàn đã được nhắc đến trên </h1>
+      <ul class="flex">
+        <li><a href="https://vtv.vn/" target="_blank"><img src="vtv.jpg" alt="VTV"></a></li>
+        <li><a href="https://www.htv.com.vn/" target="_blank"><img src="htv.jpg" alt="HTV"></a></li>
+        <li><a href="https://vtcnews.vn/" target="_blank"><img src="vtc.jpg" alt="VTC"></a></li>
+        <li><a href="https://dantri.com.vn/" target="_blank"><img src="dantri.jpg" alt="Dan Tri"></a></li>
+        <li><a href="https://tuoitre.vn/" target="_blank"><img src="tuoitre.jpg" alt="Tuoi Tre"></a></li>
+        <li><a href="https://www.24h.com.vn/" target="_blank"><img src="24h.jpg" alt="24h"></a></li>
+      </ul>
+    </div>
+    <!-- TONG HOP -->
+    <div class="summary">
+      <div class="synthetic container flex">
+        <div class="element">
+          <h3>Tuyến đường</h3>
+          <ul>
+            <li><a href="#">Xe đi từ Sài Gòn đến Hà Nội</a></li>
+            <li><a href="#">Xe đi từ Sài Gòn đến Nha Trang</a></li>
+            <li><a href="#">Xe đi từ Đà Nẵng đến Hà Nội</a></li>
+            <li><a href="#">Xe đi từ Hà Nội đến Sapa</a></li>
+            <li><a href="#">Xe đi từ Sài Gòn đến Vũng Tàu</a></li>
+            <li><a href="#">Xe đi từ Hà Nội đến Lào Cai</a></li>
+            <li><a href="#">Xe đi từ Sài Gòn đến Nghệ An</a></li>
+          </ul>
+        </div>
+        <div class="element">
+          <h3>Xe Limousine</h3>
+          <ul>
+            <li><a href="#">Xe Limousine đi từ Sài Gòn đến Hà Nội</a></li>
+            <li><a href="#">Xe Limousine đi từ Sài Gòn đến Nha Trang</a></li>
+            <li><a href="#">Xe Limousine đi từ Đà Nẵng đến Hà Nội</a></li>
+            <li><a href="#">Xe Limousine đi từ Hà Nội đến Sapa</a></li>
+            <li><a href="#">Xe Limousine đi từ Sài Gòn đến Vũng Tàu</a></li>
+            <li><a href="#">Xe Limousine đi từ Hà Nội đến Lào Cai</a></li>
+            <li><a href="#">Xe Limousine đi từ Sài Gòn đến Nghệ An</a></li>
+          </ul>
+        </div>
+        <div class="element">
+          <h3>Tin tức</h3>
+          <ul>
+            <li><a href="#">Xe giường nằm Limousine - đỉnh cao mới của ngành xe khách</a></li>
+            <li><a href="#">Xe Limousine đi Vũng Tàu: tổng hợp top 6 xe chất lượng cao</a></li>
+            <li><a href="#">Review xe Limousine đi Đà Lạt: những câu hỏi thường gặp</a></li>
+            <li><a href="#">Xe Limousine đi Sapa: tổng hợp top các hãng xe chất lượng cao</a></li>
+          </ul>
+        </div>
+        <div class="element">
+          <h3>Bến xe</h3>
+          <ul>
+            <li><a href="#">Bến xe miền Đông</a></li>
+            <li><a href="#">Bến xe miền Tây</a></li>
+            <li><a href="#">Bến xe An Sương</a></li>
+            <li><a href="#">Bến xe Gia Lâm</a></li>
+            <li><a href="#">Bến xe Mỹ Đình</a></li>
+            <li><a href="#">Bến xe Củ Chi</a></li>
+            <li><a href="#">Bến xe Lam Hồng</a></li>
+          </ul>
+        </div>
+        <div class="element">
+          <h3>Nhà xe</h3>
+          <ul>
+            <li><a href="#">Xe Điền Linh</a></li>
+            <li><a href="#">Xe Tuấn Hưng</a></li>
+            <li><a href="#">Xe Hoa Mai</a></li>
+            <li><a href="#">Xe Phú Quý</a></li>
+            <li><a href="#">Xe Minh Quốc</a></li>
+            <li><a href="#">Xe Hải Âu</a></li>
+            <li><a href="#">Xe Tràng An</a></li>
+          </ul>
+        </div>
+        <div class="element">
+          <h3>Hỗ trợ</h3>
+          <ul>
+            <li><a href="#">Hướng dẫn thanh toán</a></li>
+            <li><a href="#">Chính sách bảo mật thông tin</a></li>
+            <li><a href="#">Chính sách bảo mật thanh toán</a></li>
+            <li><a href="#">Chính sách và quy trình giải quyết tranh chấp, khiếu nại</a></li>
+            <li><a href="#">Câu hỏi thường gặp</a></li>
+            <li><a href="#">Tra cứu đơn hàng</a></li>
+            <li><a href="#">Khác...</a></li>
+          </ul>
+        </div>
+        <div class="element">
+          <h3> Về chúng tôi</h3>
+          <ul>
+            <li><a href="#">Phần mềm đại lý</a></li>
+            <li><a href="#">Giới thiệu về bến xe An Toàn</a></li>
+            <li><a href="#">Tuyển dụng</a></li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="#">Liên hệ</a></li>
+            <li class="flex">
+              <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png.webp" alt="Facebook"></a>
+              <a href="https://www.instagram.com/" target="_blank"><img src="instagram.png" alt="instagram"></a>
+              <a href="https://www.tiktok.com/" target="_blank"><img src="tiktok.png" alt="Tiktok"></a>
+            </li>
+          </ul>
+        </div>
+      </div> 
+    </div>
+    <div class="footer">
+      <h3>Công Ty TNHH TRUYỀN THÔNG TH</h3>
+      <ul>
+        <li>Địa chỉ: 5/6 đường Nguyễn Bình, xã Nhơn Đức, huyện Nhà Bè, thành phố Hồ Chí Minh</li>
+        <li>Giấy phép kinh doanh số: 2350005243</li>
+        <li>Cấp ngày 09/09/2024 bởi Sở Kế Hoạch và Đầu Tư Thành Phố Hồ Chí Minh</li>
+        <li>@ Nhà xe An Toàn @</li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bến xe An Toàn</title>
+    <link rel="stylesheet" href="style.css" />
+    <link 
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="nav flex container" >
+      <ul class="logo"><li><img src="logo-xe-bus.jpg" alt="Bus" /></li></ul>
+      <ul class="menu flex">
+        <li>
+          <a href="/"><i class="fa-solid fa-house"></i> Trang chủ </a>
+        </li>
+        <li>
+          <a href="/benxe.html"><i class="fa-solid fa-ticket"></i> Bến xe </a>
+        </li>
+        <li>
+          <a href="/nhaxe.html"><i class="fa-solid fa-newspaper"></i></i> Nhà xe </a>
+        </li>
+        <li class="tooltip">
+          <a href="/vechungtoi.html"><i class="fa-solid fa-phone"></i> Về chúng tôi </a>
+          <div class="tooltipcontent">
+            <ul>
+              <li><a href="#">Hotline: 0987.654.321</a> </li>
+              <li><a href="">AnToan@gmail.com</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="tooltip">
+          <a href="#"><i class="fa-solid fa-user"></i></i> Tài Khoản </a>
+          <div class="tooltipcontent">
+            <ul>
+              <li><a href="dangnhap.html"> Đăng nhập</a> </li>
+              <li><a href="dangky.html">Đăng ký</a></li>
+            </ul>
+          </div>
+        </li>
+    </section>
+    <h1 class="title">Đăng Ký</h1>
+    <div class="ins">
+      <form id="myForm">
+        <div class="in"><input type="text" placeholder="Nhập tên" /></div>
+        <div class="in"><input type="text" placeholder="Nhập email" /></div>
+        <div class="in"><input type="text" placeholder="Nhập số điện thoại" /></div>
+        <div class="in"><input type="text" placeholder="Nhập tài khoản" /></div>
+        <div class="in"><input type="text" placeholder="Nhập mật khẩu" id="pass" /></div>
+        <div class="in"><input type="text" placeholder="Xác nhận lại mật khẩu" id="return" /></div>
+        <div class="in"><button type="button" onclick="validateForm()">Đăng ký</button></div>
+        <div class="in"><p id="kq"></p></div>
+    </div>
+      <script src="web.js"></script>
+      <!-- TONG HOP -->
+    <div class="summary">
+      <div class="synthetic container flex">
+        <div class="element">
+          <h3>Tuyến đường</h3>
+          <ul>
+            <li><a href="#">Xe đi từ Sài Gòn đến Hà Nội</a></li>
+            <li><a href="#">Xe đi từ Sài Gòn đến Nha Trang</a></li>
+            <li><a href="#">Xe đi từ Đà Nẵng đến Hà Nội</a></li>
+            <li><a href="#">Xe đi từ Hà Nội đến Sapa</a></li>
+            <li><a href="#">Xe đi từ Sài Gòn đến Vũng Tàu</a></li>
+            <li><a href="#">Xe đi từ Hà Nội đến Lào Cai</a></li>
+            <li><a href="#">Xe đi từ Sài Gòn đến Nghệ An</a></li>
+          </ul>
+        </div>
+        <div class="element">
+          <h3>Xe Limousine</h3>
+          <ul>
+            <li><a href="#">Xe Limousine đi từ Sài Gòn đến Hà Nội</a></li>
+            <li><a href="#">Xe Limousine đi từ Sài Gòn đến Nha Trang</a></li>
+            <li><a href="#">Xe Limousine đi từ Đà Nẵng đến Hà Nội</a></li>
+            <li><a href="#">Xe Limousine đi từ Hà Nội đến Sapa</a></li>
+            <li><a href="#">Xe Limousine đi từ Sài Gòn đến Vũng Tàu</a></li>
+            <li><a href="#">Xe Limousine đi từ Hà Nội đến Lào Cai</a></li>
+            <li><a href="#">Xe Limousine đi từ Sài Gòn đến Nghệ An</a></li>
+          </ul>
+        </div>
+        <div class="element">
+          <h3>Tin tức</h3>
+          <ul>
+            <li><a href="#">Xe giường nằm Limousine - đỉnh cao mới của ngành xe khách</a></li>
+            <li><a href="#">Xe Limousine đi Vũng Tàu: tổng hợp top 6 xe chất lượng cao</a></li>
+            <li><a href="#">Review xe Limousine đi Đà Lạt: những câu hỏi thường gặp</a></li>
+            <li><a href="#">Xe Limousine đi Sapa: tổng hợp top các hãng xe chất lượng cao</a></li>
+          </ul>
+        </div>
+        <div class="element">
+          <h3>Bến xe</h3>
+          <ul>
+            <li><a href="#">Bến xe miền Đông</a></li>
+            <li><a href="#">Bến xe miền Tây</a></li>
+            <li><a href="#">Bến xe An Sương</a></li>
+            <li><a href="#">Bến xe Gia Lâm</a></li>
+            <li><a href="#">Bến xe Mỹ Đình</a></li>
+            <li><a href="#">Bến xe Củ Chi</a></li>
+            <li><a href="#">Bến xe Lam Hồng</a></li>
+          </ul>
+        </div>
+        <div class="element">
+          <h3>Nhà xe</h3>
+          <ul>
+            <li><a href="#">Xe Điền Linh</a></li>
+            <li><a href="#">Xe Tuấn Hưng</a></li>
+            <li><a href="#">Xe Hoa Mai</a></li>
+            <li><a href="#">Xe Phú Quý</a></li>
+            <li><a href="#">Xe Minh Quốc</a></li>
+            <li><a href="#">Xe Hải Âu</a></li>
+            <li><a href="#">Xe Tràng An</a></li>
+          </ul>
+        </div>
+        <div class="element">
+          <h3>Hỗ trợ</h3>
+          <ul>
+            <li><a href="#">Hướng dẫn thanh toán</a></li>
+            <li><a href="#">Chính sách bảo mật thông tin</a></li>
+            <li><a href="#">Chính sách bảo mật thanh toán</a></li>
+            <li><a href="#">Chính sách và quy trình giải quyết tranh chấp, khiếu nại</a></li>
+            <li><a href="#">Câu hỏi thường gặp</a></li>
+            <li><a href="#">Tra cứu đơn hàng</a></li>
+            <li><a href="#">Khác...</a></li>
+          </ul>
+        </div>
+        <div class="element">
+          <h3> Về chúng tôi</h3>
+          <ul>
+            <li><a href="#">Phần mềm đại lý</a></li>
+            <li><a href="#">Giới thiệu về bến xe An Toàn</a></li>
+            <li><a href="#">Tuyển dụng</a></li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="#">Liên hệ</a></li>
+            <li class="flex">
+              <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png.webp" alt="Facebook"></a>
+              <a href="https://www.instagram.com/" target="_blank"><img src="instagram.png" alt="instagram"></a>
+              <a href="https://www.tiktok.com/" target="_blank"><img src="tiktok.png" alt="Tiktok"></a>
+            </li>
+          </ul>
+        </div>
+      </div> 
+    </div>
+    <div class="footer">
+      <h3>Công Ty TNHH TRUYỀN THÔNG TH</h3>
+      <ul>
+        <li>Địa chỉ: 5/6 đường Nguyễn Bình, xã Nhơn Đức, huyện Nhà Bè, thành phố Hồ Chí Minh</li>
+        <li>Giấy phép kinh doanh số: 2350005243</li>
+        <li>Cấp ngày 09/09/2024 bởi Sở Kế Hoạch và Đầu Tư Thành Phố Hồ Chí Minh</li>
+        <li>@ Nhà xe An Toàn @</li>
+      </ul>
+    </div>
+    </form>
+  </body>
+</html>
